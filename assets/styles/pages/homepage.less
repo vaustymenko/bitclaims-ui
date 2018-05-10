@@ -1,0 +1,90 @@
+#homepage {
+  a:not(.btn) {
+    color: @brand;
+    border-bottom: 1px solid @text-normal;
+    &:hover {
+      text-decoration: none;
+      color: @text-normal;
+    }
+  }
+
+  .hero {
+    padding-bottom: 25px;
+    position: relative;
+    img {
+      width: 100%;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    h1 {
+      padding-bottom: 50px;
+    }
+    .more-info-text {
+      .bob();
+      cursor: pointer;
+      margin-top: 75px;
+      position: absolute;
+      width: 100%;
+      bottom: 25px;
+      left: 0px;
+      .text {
+        font-size: 16px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: 700;
+      }
+      .icon {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .about-wrapper {
+    color: @accent-white;
+    .about {
+      padding-top: 75px;
+      padding-bottom: 50px;
+      p {
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+    .features {
+      padding-top: 25px;
+      padding-bottom: 100px;
+      .feature {
+        .icon {
+          color: @accent-white;
+          width: 75px;
+          height: 75px;
+          margin-left: auto;
+          margin-right: auto;
+          margin-bottom: 25px;
+          border-radius: 50%;
+          font-size: 35px;
+          line-height: 75px;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .more-info-wrapper {
+    padding-top: 75px;
+    padding-bottom: 50px;
+    p {
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  &.uninitialized {
+    height: 100%;
+    .hero, .about, .features, .setup, .pep-talk {
+      opacity: 0;
+    }
+  }
+}
